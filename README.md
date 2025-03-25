@@ -3,7 +3,7 @@ This platform is an **automation tool** that lets users create and manage **webh
 
 
 ## Demo
-Demo link
+project is not hosted
 
 ## Tech Stack  
 
@@ -33,6 +33,17 @@ Demo link
 - **Easy Setup & Automation**  
   - No technical expertise required to configure and automate workflows.
   - Users can set up actions and triggers in minutes, simplifying repetitive tasks and improving efficiency
+ 
+## HLD
+![image](https://github.com/user-attachments/assets/2f42d7cc-ff69-4d60-922b-2a56855e8733)
+
+there 3 backends in software
+ - primary backend (java) - this used to manage zaps of user and also accepts incoming request 
+ - swiper - this take webhook request which are adde to database from primary backend and add them to kafaka queue  
+ - worker - worker take request from kafka process request and all there actions
+   
+this follows transaction outbox pattern 
+
 ## Screen shorts
 
 ![Screenshot from 2025-03-25 15-36-10](https://github.com/user-attachments/assets/afd1c532-27fe-43f4-8117-34cd55c1d95f)
